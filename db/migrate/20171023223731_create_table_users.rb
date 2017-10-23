@@ -4,6 +4,6 @@ class CreateTableUsers < ActiveRecord::Migration
       u.string :username
       u.string :password
       u.decimal :balance
+    end
   end
-end
 end
