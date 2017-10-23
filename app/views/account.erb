@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>User's Bank Account</title>
-    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <h1> <%= @user.username%> Account <h1>
-      
-    
+    <h1> <%= @user.username%> Account </h1>
+    <br>
+      <h2> Balance: <%= @user.balance %> </h2>
+    <br>
+    <a href="/logout" id = "Log Out">Log Out</a>
 
   </body>
 </html>
