@@ -7,7 +7,9 @@ class Helpers
 
   def self.is_logged_in?(session)
     if User.find_by(id: session[:user_id])
-    else false
+      true
+    else 
+      false
     end
   end
   
