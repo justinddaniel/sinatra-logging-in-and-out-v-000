@@ -6,13 +6,16 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <h1> <%= @user.username%> Account </h1>
-    <br>
-      <h2> Balance: <%= @user.balance %> </h2>
-    <br>
-    <br>
-    <br>
-    <a href="/logout" id = "Log Out">Log Out</a>
+    <% if Helpers.is_logged_in?(session) == true %>
+      <h1> <%= Helpers.current_user(session).username%> Account </h1>
+      <br>
+        <h2> Balance: <%= Helpers.current_user(session).balance %> </h2>
+      <br>
+      <br>
+      <br>
+      <a href="/logout" id = "Log Out">Log Out</a>
+    <% else %>
+      <a href="/"> Homepage
 
   </body>
 </html>
