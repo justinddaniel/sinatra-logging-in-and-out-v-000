@@ -6,3 +6,4 @@ class CreateTableUsers < ActiveRecord::Migration
       u.decimal :balance
   end
 end
+end
