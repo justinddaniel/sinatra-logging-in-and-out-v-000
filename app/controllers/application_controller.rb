@@ -34,9 +34,4 @@ class ApplicationController < Sinatra::Base
     erb :error
   end
 
-  get '/doh' do
-    redirect '/error'
-  end
-
-
 end
