@@ -1,5 +1,5 @@
     <% if Helpers.is_logged_in?(session) == true %>
-      <h1> Welcome <%= Helpers.current_user(session).username%> </h1>
+      <h1>Welcome <%= Helpers.current_user(session).username%></h1>
       <br>
         <h2> Balance: <%= Helpers.current_user(session).balance %> </h2>
       <br>
